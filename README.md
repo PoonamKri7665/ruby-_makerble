@@ -49,12 +49,11 @@ default: &default
   username: postgres
   password: password
   pool: 5
-
+```
 development:
   <<: *default
   database: myapp_development
-
-
+```
 test:
   <<: *default
   database: myapp_test
