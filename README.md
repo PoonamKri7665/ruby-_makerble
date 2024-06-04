@@ -24,11 +24,10 @@ Things you may want to cover:
 * ...
 ## Build the project
 With those files in place, you can now generate the Rails skeleton app using docker compose run:
-
+```
 $ docker-compose run --no-deps web rails new . --force --database=postgresql
 ```
 First, Compose builds the image for the web service using the Dockerfile. The --no-deps tells Compose not to start linked services. Then it runs rails new inside a new container, using that image. Once it's done, you should have generated a fresh app.
-```
 list the file and you will get output of all generated rail files
 * If you are running Docker on Linux, the files rails new created are owned by root. This happens because the container runs as the root user. If this is the case, change the ownership of the new files.
 ```
