@@ -42,7 +42,7 @@ The app is now bootable, but you're not quite there yet. By default, Rails expec
 ```
 Replace the contents of config/database.yml with the following:
 ```
-default: &default
+  default: &default
   adapter: postgresql
   encoding: unicode
   host: db
